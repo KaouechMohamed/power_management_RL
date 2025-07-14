@@ -11,12 +11,12 @@ class PowerManagementEnv(gym.Env):
         self.max_res = 100
         self.max_demand = 50
         self.max_soh = 1.0
-        self.capacity = 50  # battery capacity in kWh
-        self.grid_price = 0.3  # €/kWh
-        self.battery_price = 200  # €/kWh
+        self.capacity = 50 
+        self.grid_price = 0.3  
+        self.battery_price = 200  
         self.cycle_life = 5000
-        self.alpha = 0.5  # cost coefficient
-        self.lambda_ = 0.3  # health coefficient
+        self.alpha = 0.5  
+        self.lambda_ = 0.3 
 
         self.action_space = spaces.MultiDiscrete([2, 2])  # main and support actions
 
